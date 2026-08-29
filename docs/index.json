@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-30",
+  "documents": {
+    "overview": "docs/project/overview.md",
+    "requirements": "docs/project/requirements.md",
+    "businessRules": "docs/project/business-rules.md",
+    "structure": "docs/project/structure.md",
+    "techStack": "docs/project/tech-stack.md",
+    "architectureOverview": "docs/architecture/overview.md",
+    "components": "docs/architecture/components.md",
+    "dataFlow": "docs/architecture/data-flow.md",
+    "deployment": "docs/architecture/deployment.md",
+    "api": "docs/contracts/api.md",
+    "validation": "docs/contracts/validation.md",
+    "events": "docs/contracts/events.md",
+    "database": "docs/data/database.md",
+    "developmentGuide": "docs/engineering/development-guide.md",
+    "testing": "docs/engineering/testing.md",
+    "frontend": "docs/frontend/design-and-interaction.md",
+    "changelog": "docs/changes/CHANGELOG.md",
+    "technicalDebt": "docs/risks/technical-debt.md"
+  },
+  "modules": {
+    "protocol": {
+      "docs": ["docs/modules/protocol/README.md"],
+      "sources": ["packages/protocol"]
+    },
+    "tui": {
+      "docs": ["docs/modules/tui/README.md"],
+      "sources": ["packages/tui"]
+    }
+  },
+  "requirements": {
+    "REQ-BUILD-001": "docs/project/requirements.md#req-build-001-基准评测集与用例制作-benchmark-dataset--eval-case",
+    "REQ-RUN-001": "docs/project/requirements.md#req-run-001-会话生命周期与分叉调度-session-lifecycle--forking",
+    "REQ-RUN-002": "docs/project/requirements.md#req-run-002-上下文分段管理与缓存核算-context-segmentation--cache-accounting",
+    "REQ-RUN-003": "docs/project/requirements.md#req-run-003-模型供应商统一抽象-model-provider-adapter",
+    "REQ-EVAL-001": "docs/project/requirements.md#req-eval-001-三层断言评测机制-three-tier-assertion-layer",
+    "REQ-EVAL-002": "docs/project/requirements.md#req-eval-002-五维加权综合评分计算-composite-scoring",
+    "REQ-GOVERN-001": "docs/project/requirements.md#req-govern-001-基于-capability-的权限安全沙箱-capability-policy-engine",
+    "REQ-GOVERN-002": "docs/project/requirements.md#req-govern-002-100-可复现产物包-reproduction-bundle",
+    "REQ-TUI-001": "docs/project/requirements.md#req-tui-001-键盘优先高响应终端交互客户端-keyboard-first-tui-client"
+  },
+  "businessRules": {
+    "BR-SCORE-001": "docs/project/business-rules.md#br-score-001-五维加权综合评分计算公式",
+    "BR-CAP-001": "docs/project/business-rules.md#br-cap-001-最小权限原则与越权拦截",
+    "BR-CAP-002": "docs/project/business-rules.md#br-cap-002-capability-模式匹配语法",
+    "BR-CTX-001": "docs/project/business-rules.md#br-ctx-001-上下文分段优先级与动态裁剪策略",
+    "BR-SANDBOX-001": "docs/project/business-rules.md#br-sandbox-001-沙箱执行环境单向隔离与快照一致性",
+    "BR-SESSION-001": "docs/project/business-rules.md#br-session-001-会话历史不可篡改与分叉继承"
+  }
+}
