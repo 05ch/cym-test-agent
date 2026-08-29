@@ -1,0 +1,29 @@
+{
+  "name": "@testagent/tui",
+  "version": "2.0.0",
+  "description": "Keyboard-first TUI Terminal Client for TestAgent Studio & Eval",
+  "type": "module",
+  "bin": {
+    "testagent-tui": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.tsx",
+    "start": "node dist/cli.js"
+  },
+  "dependencies": {
+    "@testagent/protocol": "workspace:*",
+    "chalk": "^5.4.1",
+    "ink": "^5.1.0",
+    "ink-select-input": "^6.0.0",
+    "ink-text-input": "^6.0.0",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
