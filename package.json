@@ -1,0 +1,20 @@
+{
+  "name": "cym-test-agent-monorepo",
+  "version": "2.0.0",
+  "private": true,
+  "description": "TestAgent Studio & Eval - Coding & Testing Agent R&D and Quality Evaluation Infrastructure",
+  "scripts": {
+    "build": "pnpm --recursive run build",
+    "dev:tui": "pnpm --filter @testagent/tui dev",
+    "dev:web": "pnpm --filter @testagent/web dev",
+    "build:tui": "pnpm --filter @testagent/tui build",
+    "build:web": "pnpm --filter @testagent/web build"
+  },
+  "packageManager": "pnpm@11.21.0",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
